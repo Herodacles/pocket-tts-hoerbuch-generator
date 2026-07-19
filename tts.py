@@ -34,12 +34,13 @@ if torch.cuda.is_available():
 
 
 
-if len(sys.argv) < 2:
-    print("Aufruf: python3 tts2.py datei.pdf/epub/txt stimme_name_ohne_endung ")
+if len(sys.argv) < 3:
+    print("Aufruf: python3 tts2.py Datei.pdf/epub/txt Stimme_Name_ohne_Endung Geschwindigkeit_O.OO ")
     exit()
 
 datei = sys.argv[1]
 auswahl = sys.argv[2]
+GESCHWINDIGKEIT = sys.argv[3]
 
 basis = os.path.splitext(datei)[0]
 
@@ -68,7 +69,7 @@ if not os.path.exists(VOICE):
 LANGUAGE = "german_24l"
 
 BLOCK_GROESSE = 80
-GESCHWINDIGKEIT = 0.60
+GESCHWINDIGKEIT = 0.50
 
 text = ""
 

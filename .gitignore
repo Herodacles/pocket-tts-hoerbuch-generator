@@ -78,7 +78,6 @@ target/
 test_en_audio_4000.model
 profile_output*
 *.safetensors
-*.wav
 *.model
 *.pt
 

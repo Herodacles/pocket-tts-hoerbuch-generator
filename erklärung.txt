@@ -1,0 +1,35 @@
+
+# Pocket-TTS Hörbuch-Generator
+
+## Beschreibung
+
+Dieses Programm wandelt Textdateien, PDF-Dokumente und EPUB-Bücher automatisch in gesprochene WAV-Audiodateien um.
+
+Es verwendet das Pocket-TTS Sprachmodell zur KI-basierten Spracherzeugung und ermöglicht die Verwendung eigener Sprachaufnahmen als Stimmenvorlage.
+
+## Funktionen
+
+- PDF-Dateien auslesen und in Text umwandeln
+- EPUB-Bücher auslesen
+- TXT-Dateien direkt verarbeiten
+- Automatische Textbereinigung
+- Entfernung von PDF-Trennungen und Formatierungsfehlern
+- Aufteilung langer Texte in verarbeitbare Textblöcke
+- KI-Spracherzeugung mit Pocket-TTS
+- Unterstützung eigener Stimmenvorlagen
+- Streaming-Erzeugung der Audiodaten
+- Direkte Ausgabe als WAV-Datei
+- Unterstützung verschiedener Eingabestimmen
+
+## Verwendung
+
+Aufruf:
+
+```bash
+python3 tts2.py datei.pdf stimme
+
+
+python3 tts2.py bibel.pdf heidi
+
+
+stimmen/heidi.wav
